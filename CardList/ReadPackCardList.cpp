@@ -23,9 +23,13 @@ struct  PackCardList
 constexpr   PackCardList
 packTable[][64] = {
     {
-#include    "Vol1.pcl"
+#    include    "Vol1.pcl"
         PACK_CARD( 0, NOTHING )
-    }
+    }, {
+#    include    "Vol2.pcl"
+    }, {
+#    include    "Vol3.pcl"
+    },
 };
 
 int main(int argc, char * argv[])
