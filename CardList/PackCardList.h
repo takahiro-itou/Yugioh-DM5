@@ -21,6 +21,8 @@
 #if !defined( YUGIOHDM5_INCLUDED_PACK_CARD_LIST_H )
 #    define   YUGIOHDM5_INCLUDED_PACK_CARD_LIST_H
 
+#include    <stddef.h>
+
 enum class  CardRarity
 {
     COMMON,
@@ -46,19 +48,36 @@ struct  PackCardList
     CardList    cardList;
 };
 
+
+//========================================================================
+/**
+**    配列の要素数を取得する。
+**/
+
+template  <typename  T,  size_t  N>
+constexpr
+size_t  getArraySize(T  (&)[N])
+{
+    return ( N );
+}
+
+//========================================================================
+/**
+**    パックのカードリスト
+**/
+
 #define     PACK_CARD(number, rarity)   \
     { number, CardRarity::rarity }
 
 constexpr   PackCardListEntry
-pclVol1[] = {
+pclVol1[41] = {
 #    include    "Vol1.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardList
 packTable[] = {
-    { 40, pclVol1 },
-
+    { getArraySize(pclVol1) - 1, pclVol1 },
 };
 
 #endif
