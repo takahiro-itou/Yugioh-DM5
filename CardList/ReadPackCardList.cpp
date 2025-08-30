@@ -27,8 +27,22 @@ packTable[][64] = {
         PACK_CARD( 0, NOTHING )
     }, {
 #    include    "Vol2.pcl"
+        PACK_CARD( 0, NOTHING )
     }, {
 #    include    "Vol3.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "Vol4.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "Vol5.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "Vol6.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "Vol7.pcl"
+        PACK_CARD( 0, NOTHING )
     },
 };
 
