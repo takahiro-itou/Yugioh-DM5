@@ -63,6 +63,22 @@ packTable[][64] = {
         PACK_CARD( 0, NOTHING )
     }, {
 #    include    "PremiumPack3.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "ExpertPack1.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "ExpertPack2.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "ExpertPack3.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "ExpertPack4.pcl"
+        PACK_CARD( 0, NOTHING )
+    } , {
+#    include    "ExpertPack5.pcl"
+        PACK_CARD( 0, NOTHING )
     },
 };
 
