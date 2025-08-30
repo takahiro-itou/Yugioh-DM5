@@ -129,6 +129,90 @@ pclCurseOfAnubis[41] = {
     PACK_CARD( 0, NOTHING )
 };
 
+constexpr   PackCardListEntry
+pclLegendOfBlueEyesWhiteDragon[41] = {
+#    include    "LegendOfBlueEyesWhiteDragon.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclPhantomGod[41] = {
+#    include    "PhantomGod.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclDarkCeremony[41] = {
+#    include    "DarkCeremony.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclPremiumPack3[41] = {
+#    include    "PremiumPack3.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclExpertPack1[41] = {
+#    include    "ExpertPack1.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclExpertPack2[41] = {
+#    include    "ExpertPack2.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclExpertPack3[41] = {
+#    include    "ExpertPack3.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclExpertPack4[41] = {
+#    include    "ExpertPack4.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclExpertPack5[41] = {
+#    include    "ExpertPack5.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclDuelistPack[41] = {
+#    include    "DuelistPack.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclDuelFinalist[41] = {
+#    include    "DuelFinalist.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclRareSelection[41] = {
+#    include    "RareSelection.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclLimitedPack[41] = {
+#    include    "LimitedPack.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclGrandpaPack[41] = {
+#    include    "GrandpaPack.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
 #undef      PACK_CARD
 
 #define     PACK_ENTRY(name)  \
@@ -143,6 +227,23 @@ packTable[] = {
     PACK_ENTRY(Vol5),
     PACK_ENTRY(Vol6),
     PACK_ENTRY(Vol7),
+    PACK_ENTRY(MagicRuler),
+    PACK_ENTRY(PharaohsServant),
+    PACK_ENTRY(CurseOfAnubis),
+    PACK_ENTRY(LegendOfBlueEyesWhiteDragon),
+    PACK_ENTRY(PhantomGod),
+    PACK_ENTRY(DarkCeremony),
+    PACK_ENTRY(PremiumPack3),
+    PACK_ENTRY(ExpertPack1),
+    PACK_ENTRY(ExpertPack2),
+    PACK_ENTRY(ExpertPack3),
+    PACK_ENTRY(ExpertPack4),
+    PACK_ENTRY(ExpertPack5),
+    PACK_ENTRY(DuelistPack),
+    PACK_ENTRY(DuelFinalist),
+    PACK_ENTRY(RareSelection),
+    PACK_ENTRY(LimitedPack),
+    PACK_ENTRY(GrandpaPack),
 };
 
 #undef      PACK_ENTRY
