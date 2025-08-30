@@ -79,6 +79,18 @@ packTable[][64] = {
     } , {
 #    include    "ExpertPack5.pcl"
         PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "DuelistPack.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "DuelFinalist.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "RareSelection.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "LimitedPack.pcl"
+        PACK_CARD( 0, NOTHING )
     },
 };
 
