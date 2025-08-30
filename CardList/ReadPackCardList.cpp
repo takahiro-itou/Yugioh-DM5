@@ -52,6 +52,17 @@ packTable[][64] = {
     }, {
 #    include    "CurseOfAnubis.pcl"
         PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "LegendOfBlueEyesWhiteDragon.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "PhantomGod.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "DarkCeremony.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "PremiumPack3.pcl"
     },
 };
 
