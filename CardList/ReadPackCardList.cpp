@@ -1,37 +1,5 @@
 
-enum class  CardRarity
-{
-    COMMON,
-    NORMAL,
-    SECRET,
-    ULTRA,
-    SUPER,
-    RARE,
-    NOTHING,
-};
-
-struct  PackCardListEntry
-{
-    int         number;
-    CardRarity  rarity;
-};
-
-typedef     const   PackCardListEntry  *    PackCardList;
-
-
-#define     PACK_CARD(number, rarity)   \
-    { number, CardRarity::rarity }
-
-constexpr   PackCardListEntry
-pclVol1[] = {
-#    include    "Vol1.pcl"
-    PACK_CARD( 0, NOTHING )
-};
-
-constexpr   PackCardList
-packTable[] = {
-    pclVol1,
-};
+#include    "PackCardList.h"
 
 #if 0
 constexpr   PackCardList
