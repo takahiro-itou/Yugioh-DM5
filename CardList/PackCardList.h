@@ -129,6 +129,8 @@ pclCurseOfAnubis[41] = {
     PACK_CARD( 0, NOTHING )
 };
 
+#undef      PACK_CARD
+
 #define     PACK_ENTRY(name)  \
     { getArraySize(pcl ## name) - 1, pcl ## name }
 
@@ -142,5 +144,7 @@ packTable[] = {
     PACK_ENTRY(Vol6),
     PACK_ENTRY(Vol7),
 };
+
+#undef      PACK_ENTRY
 
 #endif
