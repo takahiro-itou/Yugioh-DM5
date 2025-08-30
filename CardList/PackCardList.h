@@ -237,7 +237,7 @@ pclVJumpGiftPack[41] = {
     { getArraySize(pcl ## name) - 1, pcl ## name }
 
 constexpr   PackCardList
-packTable[] = {
+packTable[27] = {
     PACK_ENTRY(Vol1),
     PACK_ENTRY(Vol2),
     PACK_ENTRY(Vol3),
