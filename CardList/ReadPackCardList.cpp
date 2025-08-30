@@ -10,16 +10,30 @@ enum class  CardRarity
     NOTHING,
 };
 
-struct  PackCardList
+struct  PackCardListEntry
 {
     int         number;
     CardRarity  rarity;
 };
 
+typedef     const   PackCardListEntry  *    PackCardList;
+
+
 #define     PACK_CARD(number, rarity)   \
     { number, CardRarity::rarity }
 
+constexpr   PackCardListEntry
+pclVol1[] = {
+#    include    "Vol1.pcl"
+    PACK_CARD( 0, NOTHING )
+};
 
+constexpr   PackCardList
+packTable[] = {
+    pclVol1,
+};
+
+#if 0
 constexpr   PackCardList
 packTable[][64] = {
     {
@@ -91,8 +105,13 @@ packTable[][64] = {
     }, {
 #    include    "LimitedPack.pcl"
         PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "GrandpaPack.pcl"
+        PACK_CARD( 0, NOTHING )
     },
 };
+
+#endif
 
 int main(int argc, char * argv[])
 {
