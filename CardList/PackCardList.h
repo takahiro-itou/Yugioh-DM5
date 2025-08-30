@@ -75,9 +75,72 @@ pclVol1[41] = {
     PACK_CARD( 0, NOTHING )
 };
 
+constexpr   PackCardListEntry
+pclVol2[41] = {
+#    include    "Vol2.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVol3[41] = {
+#    include    "Vol3.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVol4[41] = {
+#    include    "Vol4.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVol5[41] = {
+#    include    "Vol5.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVol6[41] = {
+#    include    "Vol6.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVol7[41] = {
+#    include    "Vol7.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclMagicRuler[41] = {
+#    include    "MagicRuler.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclPharaohsServant[41] = {
+#    include    "PharaohsServant.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclCurseOfAnubis[41] = {
+#    include    "CurseOfAnubis.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+#define     PACK_ENTRY(name)  \
+    { getArraySize(pcl ## name) - 1, pcl ## name }
+
 constexpr   PackCardList
 packTable[] = {
-    { getArraySize(pclVol1) - 1, pclVol1 },
+    PACK_ENTRY(Vol1),
+    PACK_ENTRY(Vol2),
+    PACK_ENTRY(Vol3),
+    PACK_ENTRY(Vol4),
+    PACK_ENTRY(Vol5),
+    PACK_ENTRY(Vol6),
+    PACK_ENTRY(Vol7),
 };
 
 #endif
