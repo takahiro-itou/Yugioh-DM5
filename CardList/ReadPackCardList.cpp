@@ -43,6 +43,15 @@ packTable[][64] = {
     }, {
 #    include    "Vol7.pcl"
         PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "MagicRuler.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "PharaohsServant.pcl"
+        PACK_CARD( 0, NOTHING )
+    }, {
+#    include    "CurseOfAnubis.pcl"
+        PACK_CARD( 0, NOTHING )
     },
 };
 
