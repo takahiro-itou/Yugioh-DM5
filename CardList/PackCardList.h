@@ -38,7 +38,13 @@ struct  PackCardListEntry
     CardRarity  rarity;
 };
 
-typedef     const   PackCardListEntry  *    PackCardList;
+typedef     const   PackCardListEntry  *    CardList;
+
+struct  PackCardList
+{
+    int         numCards;
+    CardList    cardList;
+};
 
 #define     PACK_CARD(number, rarity)   \
     { number, CardRarity::rarity }
@@ -51,7 +57,8 @@ pclVol1[] = {
 
 constexpr   PackCardList
 packTable[] = {
-    pclVol1,
+    { 40, pclVol1 },
+
 };
 
 #endif
