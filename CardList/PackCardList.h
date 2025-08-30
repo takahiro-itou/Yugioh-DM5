@@ -213,6 +213,24 @@ pclGrandpaPack[41] = {
     PACK_CARD( 0, NOTHING )
 };
 
+constexpr   PackCardListEntry
+pclWeeklyJumpGiftPackA[41] = {
+#    include    "WeeklyJumpGiftPackA.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclWeeklyJumpGiftPackB[41] = {
+#    include    "WeeklyJumpGiftPackB.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
+constexpr   PackCardListEntry
+pclVJumpGiftPack[41] = {
+#    include    "VJumpGiftPack.pcl"
+    PACK_CARD( 0, NOTHING )
+};
+
 #undef      PACK_CARD
 
 #define     PACK_ENTRY(name)  \
@@ -244,6 +262,9 @@ packTable[] = {
     PACK_ENTRY(RareSelection),
     PACK_ENTRY(LimitedPack),
     PACK_ENTRY(GrandpaPack),
+    PACK_ENTRY(WeeklyJumpGiftPackA),
+    PACK_ENTRY(WeeklyJumpGiftPackB),
+    PACK_ENTRY(VJumpGiftPack),
 };
 
 #undef      PACK_ENTRY
