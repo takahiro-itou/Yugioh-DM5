@@ -88,19 +88,19 @@ pclVol3[51] = {
 };
 
 constexpr   PackCardListEntry
-pclVol4[41] = {
+pclVol4[51] = {
 #    include    "Vol4.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclVol5[41] = {
+pclVol5[51] = {
 #    include    "Vol5.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclVol6[41] = {
+pclVol6[53] = {
 #    include    "Vol6.pcl"
     PACK_CARD( 0, NOTHING )
 };
