@@ -100,7 +100,7 @@ pclVol5[51] = {
 };
 
 constexpr   PackCardListEntry
-pclVol6[41] = {
+pclVol6[53] = {
 #    include    "Vol6.pcl"
     PACK_CARD( 0, NOTHING )
 };
