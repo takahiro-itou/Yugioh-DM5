@@ -112,7 +112,7 @@ pclVol7[53] = {
 };
 
 constexpr   PackCardListEntry
-pclMagicRuler[41] = {
+pclMagicRuler[51] = {
 #    include    "MagicRuler.pcl"
     PACK_CARD( 0, NOTHING )
 };
