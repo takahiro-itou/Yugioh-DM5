@@ -118,7 +118,7 @@ pclMagicRuler[51] = {
 };
 
 constexpr   PackCardListEntry
-pclPharaohsServant[41] = {
+pclPharaohsServant[53] = {
 #    include    "PharaohsServant.pcl"
     PACK_CARD( 0, NOTHING )
 };
