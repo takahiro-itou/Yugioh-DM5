@@ -124,7 +124,7 @@ pclPharaohsServant[53] = {
 };
 
 constexpr   PackCardListEntry
-pclCurseOfAnubis[41] = {
+pclCurseOfAnubis[53] = {
 #    include    "CurseOfAnubis.pcl"
     PACK_CARD( 0, NOTHING )
 };
