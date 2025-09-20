@@ -160,7 +160,7 @@ pclExpertPack1[66] = {
 };
 
 constexpr   PackCardListEntry
-pclExpertPack2[41] = {
+pclExpertPack2[64] = {
 #    include    "ExpertPack2.pcl"
     PACK_CARD( 0, NOTHING )
 };
