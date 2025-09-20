@@ -106,25 +106,25 @@ pclVol6[53] = {
 };
 
 constexpr   PackCardListEntry
-pclVol7[41] = {
+pclVol7[53] = {
 #    include    "Vol7.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclMagicRuler[41] = {
+pclMagicRuler[51] = {
 #    include    "MagicRuler.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclPharaohsServant[41] = {
+pclPharaohsServant[53] = {
 #    include    "PharaohsServant.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclCurseOfAnubis[41] = {
+pclCurseOfAnubis[53] = {
 #    include    "CurseOfAnubis.pcl"
     PACK_CARD( 0, NOTHING )
 };
@@ -214,19 +214,19 @@ pclGrandpaPack[41] = {
 };
 
 constexpr   PackCardListEntry
-pclWeeklyJumpGiftPackA[41] = {
+pclWeeklyJumpGiftPackA[149] = {
 #    include    "WeeklyJumpGiftPackA.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclWeeklyJumpGiftPackB[41] = {
+pclWeeklyJumpGiftPackB[52] = {
 #    include    "WeeklyJumpGiftPackB.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclVJumpGiftPack[41] = {
+pclVJumpGiftPack[52] = {
 #    include    "VJumpGiftPack.pcl"
     PACK_CARD( 0, NOTHING )
 };
