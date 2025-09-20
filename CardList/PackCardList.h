@@ -142,7 +142,7 @@ pclPhantomGod[66] = {
 };
 
 constexpr   PackCardListEntry
-pclDarkCeremony[41] = {
+pclDarkCeremony[17] = {
 #    include    "DarkCeremony.pcl"
     PACK_CARD( 0, NOTHING )
 };
