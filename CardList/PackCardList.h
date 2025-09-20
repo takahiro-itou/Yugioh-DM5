@@ -136,7 +136,7 @@ pclLegendOfBlueEyesWhiteDragon[62] = {
 };
 
 constexpr   PackCardListEntry
-pclPhantomGod[41] = {
+pclPhantomGod[66] = {
 #    include    "PhantomGod.pcl"
     PACK_CARD( 0, NOTHING )
 };
