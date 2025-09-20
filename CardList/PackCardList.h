@@ -130,7 +130,7 @@ pclCurseOfAnubis[53] = {
 };
 
 constexpr   PackCardListEntry
-pclLegendOfBlueEyesWhiteDragon[41] = {
+pclLegendOfBlueEyesWhiteDragon[62] = {
 #    include    "LegendOfBlueEyesWhiteDragon.pcl"
     PACK_CARD( 0, NOTHING )
 };
