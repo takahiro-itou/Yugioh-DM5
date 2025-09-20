@@ -148,7 +148,7 @@ pclDarkCeremony[17] = {
 };
 
 constexpr   PackCardListEntry
-pclPremiumPack3[41] = {
+pclPremiumPack3[11] = {
 #    include    "PremiumPack3.pcl"
     PACK_CARD( 0, NOTHING )
 };
