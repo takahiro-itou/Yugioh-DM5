@@ -226,7 +226,7 @@ pclWeeklyJumpGiftPackB[52] = {
 };
 
 constexpr   PackCardListEntry
-pclVJumpGiftPack[41] = {
+pclVJumpGiftPack[52] = {
 #    include    "VJumpGiftPack.pcl"
     PACK_CARD( 0, NOTHING )
 };
