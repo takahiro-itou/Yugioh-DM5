@@ -196,7 +196,7 @@ pclDuelFinalist[41] = {
 };
 
 constexpr   PackCardListEntry
-pclRareSelection[41] = {
+pclRareSelection[51] = {
 #    include    "RareSelection.pcl"
     PACK_CARD( 0, NOTHING )
 };
