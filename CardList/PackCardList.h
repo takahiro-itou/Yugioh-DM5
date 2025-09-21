@@ -130,61 +130,61 @@ pclCurseOfAnubis[53] = {
 };
 
 constexpr   PackCardListEntry
-pclLegendOfBlueEyesWhiteDragon[41] = {
+pclLegendOfBlueEyesWhiteDragon[62] = {
 #    include    "LegendOfBlueEyesWhiteDragon.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclPhantomGod[41] = {
+pclPhantomGod[66] = {
 #    include    "PhantomGod.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclDarkCeremony[41] = {
+pclDarkCeremony[17] = {
 #    include    "DarkCeremony.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclPremiumPack3[41] = {
+pclPremiumPack3[11] = {
 #    include    "PremiumPack3.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclExpertPack1[41] = {
+pclExpertPack1[66] = {
 #    include    "ExpertPack1.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclExpertPack2[41] = {
+pclExpertPack2[64] = {
 #    include    "ExpertPack2.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclExpertPack3[41] = {
+pclExpertPack3[67] = {
 #    include    "ExpertPack3.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclExpertPack4[41] = {
+pclExpertPack4[67] = {
 #    include    "ExpertPack4.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclExpertPack5[41] = {
+pclExpertPack5[51] = {
 #    include    "ExpertPack5.pcl"
     PACK_CARD( 0, NOTHING )
 };
 
 constexpr   PackCardListEntry
-pclDuelistPack[41] = {
+pclDuelistPack[37] = {
 #    include    "DuelistPack.pcl"
     PACK_CARD( 0, NOTHING )
 };
@@ -196,7 +196,7 @@ pclDuelFinalist[41] = {
 };
 
 constexpr   PackCardListEntry
-pclRareSelection[41] = {
+pclRareSelection[51] = {
 #    include    "RareSelection.pcl"
     PACK_CARD( 0, NOTHING )
 };
@@ -208,7 +208,7 @@ pclLimitedPack[41] = {
 };
 
 constexpr   PackCardListEntry
-pclGrandpaPack[41] = {
+pclGrandpaPack[16] = {
 #    include    "GrandpaPack.pcl"
     PACK_CARD( 0, NOTHING )
 };
