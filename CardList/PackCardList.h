@@ -208,7 +208,7 @@ pclLimitedPack[41] = {
 };
 
 constexpr   PackCardListEntry
-pclGrandpaPack[41] = {
+pclGrandpaPack[16] = {
 #    include    "GrandpaPack.pcl"
     PACK_CARD( 0, NOTHING )
 };
