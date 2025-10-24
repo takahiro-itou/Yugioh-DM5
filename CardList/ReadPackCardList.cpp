@@ -43,18 +43,32 @@ void  initializeCardTable()
 }
 
 int  computeObtainCardList(
-        const  int  bitsPacks)
+        const  int  bitPack,
+        int         cardList[])
 {
     int num = 0;
+
+    for ( int i = 1; i <= NUM_CARDS; ++ i ) {
+        const  int  pat = g_cardTable[i];
+        if ( pat & bitPack ) {
+            cardList[num++] = i;
+        }
+    }
 
     return ( num );
 }
 
 int main(int argc, char * argv[])
 {
+    int obtainCards[928];
+
     initializeCardTable();
 
-    const  int  num = computeObtainCardList(0);
+    int     bitPack = 0x00000001;
+    const  int  num = computeObtainCardList(bitPack, obtainCards);
+    std::cout   <<  "Packs = "      <<  bitPack
+                <<  ", Cards = "    <<  num
+                <<  std::endl;
 
     return ( 0 );
 }
