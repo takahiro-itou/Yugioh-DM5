@@ -42,9 +42,19 @@ void  initializeCardTable()
                 <<  std::endl;
 }
 
+int  computeObtainCardList(
+        const  int  bitsPacks)
+{
+    int num = 0;
+
+    return ( num );
+}
+
 int main(int argc, char * argv[])
 {
     initializeCardTable();
+
+    const  int  num = computeObtainCardList(0);
 
     return ( 0 );
 }
