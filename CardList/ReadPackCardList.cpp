@@ -37,5 +37,7 @@ void  initializeCardTable()
 
 int main(int argc, char * argv[])
 {
+    initializeCardTable();
+
     return ( 0 );
 }
