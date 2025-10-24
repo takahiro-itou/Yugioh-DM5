@@ -1,6 +1,9 @@
 
 #include    "PackCardList.h"
 
+#include    <iostream>
+
+
 constexpr   int     NUM_CARDS   = 928;
 
 int  g_cardTable[NUM_CARDS + 1] = { 0 };
@@ -18,6 +21,12 @@ void  initializeCardTable()
             g_cardTable[ci] |= val;
         }
     }
+
+    //  DEBUG PRINT
+    std::cerr   <<  "ID = 001"
+                <<  ", Actual = "   <<  g_cardTable[1]
+                <<  ", Expect = "   <<  0x00000400
+                <<  std::endl;
 }
 
 int main(int argc, char * argv[])
