@@ -27,6 +27,12 @@ void  initializeCardTable()
                 <<  ", Actual = "   <<  g_cardTable[1]
                 <<  ", Expect = "   <<  0x00000400
                 <<  std::endl;
+
+    std::cerr   <<  "ID = 623"
+                <<  ", Actual = "   <<  g_cardTable[623]
+                <<  ", Expect = "   <<  0x04280802
+                <<  std::endl;
+
 }
 
 int main(int argc, char * argv[])
