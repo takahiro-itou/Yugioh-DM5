@@ -17,6 +17,9 @@ void  initializeCardTable()
         const  int  val = (1 << p);
         const  int  nc  = packTable[p].numCards;
         for ( int j = 0; j < nc; ++ j ) {
+            if (  packTable[p].cardList[j].rarity == CardRarity::NORMAL ) {
+                continue;
+            }
             const  int  ci  = packTable[p].cardList[j].number;
             g_cardTable[ci] |= val;
         }
