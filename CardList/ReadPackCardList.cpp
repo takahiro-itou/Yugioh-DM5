@@ -10,7 +10,7 @@ int  g_cardTable[NUM_CARDS + 1] = { 0 };
 
 void  initializeCardTable()
 {
-    for ( int i = 0; i <= NUM_CARDS; ++ i ) {
+    for ( int i = 0; i <= PackListId::NUM_CARDS; ++ i ) {
         g_cardTable[i]  = 0;
     }
 
@@ -59,7 +59,7 @@ int  computeObtainCardList(
 {
     int num = 0;
 
-    for ( int i = 1; i <= NUM_CARDS; ++ i ) {
+    for ( int i = 1; i <= PackListId::NUM_CARDS; ++ i ) {
         const  int  pat = g_cardTable[i];
         if ( pat & bitPack ) {
             cardList[num++] = i;
