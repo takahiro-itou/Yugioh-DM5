@@ -37,14 +37,18 @@ void  initializeCardTable()
     }
 
     //  DEBUG PRINT
+    int exp = (PackBits::LEGEND_OF_BLUE_EYES_WHITE_DRAGON);
     std::cerr   <<  "ID = 001"
                 <<  ", Actual = "   <<  g_cardTable[1]
-                <<  ", Expect = "   <<  0x00000400
+                <<  ", Expect = "   <<  exp
                 <<  std::endl;
 
+    exp = (PackBits::VOL2 | PackBits::PHANTOM_GOD
+           | PackBits::DUELIST_PACK | PackBits::RARE_SELECTION
+           | PackBits::VJUMP_GIFT_PACK);
     std::cerr   <<  "ID = 623"
                 <<  ", Actual = "   <<  g_cardTable[623]
-                <<  ", Expect = "   <<  0x04280802
+                <<  ", Expect = "   <<  exp
                 <<  std::endl;
 
     std::cerr   <<  "ID = 928"
