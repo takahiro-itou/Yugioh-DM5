@@ -14,7 +14,7 @@ void  initializeCardTable()
         g_cardTable[i]  = 0;
     }
 
-    for ( int p = 0; p < getArraySize(packTable); ++ p ) {
+    for ( int p = 0; p < PackListId::NUM_PACKS; ++ p ) {
         const  int  val = (1 << p);
         const  int  nc  = packTable[p].numCards;
         int prv = 0;

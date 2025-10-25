@@ -269,8 +269,9 @@ packTable[27] = {
 
 #undef      PACK_ENTRY
 
-enum class  PackListId : int
-{
+struct  PackListId  {
+
+enum  {
     VOL1    = 0,
     VOL2,
     VOL3,
@@ -300,6 +301,9 @@ enum class  PackListId : int
     VJUMP_GIFT_PACK,
 
     NUM_PACKS,
+    NUM_CARDS   = 928,
+};
+
 };
 
 #endif
