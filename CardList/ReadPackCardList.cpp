@@ -147,6 +147,7 @@ showObtrainRemainCards(
     for ( int i = 0; i < rem; ++ i ) {
         std::cout   <<  remainCards[i]  <<  ", ";
     }
+    std::cout   <<  std::endl;
 
     return;
 }
@@ -156,7 +157,24 @@ int main(int argc, char * argv[])
     initializeCardTable();
 
     int     bitPack = pbEssential | pbStage10Win;
-    showObtrainRemainCards(0xFFFFFFFF & ~PackBits::LIMITED_PACK);
+    showObtrainRemainCards(0x7FFFFFFF & ~PackBits::LIMITED_PACK);
+
+    const  int  bitEss  = pbEssential | pbEssential | PackBits::LIMITED_PACK;
+    for ( int p = 0; p < PackListId::NUM_PACKS; ++ p ) {
+        const  int  pat = (1 << p);
+        if ( (bitEss) & pat ) {
+            //  これは必ず手に入るパックだからスキップ。    //
+            continue;
+        }
+
+        //  このパックも外して計算  //
+        std::cout   <<  "Exclude Pack "  <<  p
+                    <<  ", pat = "  <<  pat
+                    <<  std::endl;
+        bitPack = 0x07BFFFFF & ~pat;
+        showObtrainRemainCards(bitPack);
+        std::cout   <<  std::endl;
+    }
 
     return ( 0 );
 }
