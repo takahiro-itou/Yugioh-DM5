@@ -75,19 +75,29 @@ int  computeObtainCardList(
     return ( num );
 }
 
-int main(int argc, char * argv[])
+void
+showObtrainRemainCards(
+        const  int  bitPack)
 {
     int obtainCards[928];
     int remainCards[928];
 
-    initializeCardTable();
-
-    int     bitPack = 0x00000001;
     const  int  num = computeObtainCardList(
                             bitPack, obtainCards, remainCards);
+    const  int  rem = (PackListId::NUM_CARDS - num);
     std::cout   <<  "Packs = "      <<  bitPack
                 <<  ", Cards = "    <<  num
                 <<  std::endl;
+
+    return;
+}
+
+int main(int argc, char * argv[])
+{
+    initializeCardTable();
+
+    int     bitPack = 0x07FFFFFF;
+    showObtrainRemainCards(bitPack);
 
     return ( 0 );
 }
