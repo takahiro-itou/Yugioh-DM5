@@ -60,14 +60,17 @@ void  initializeCardTable()
 
 int  computeObtainCardList(
         const  int  bitPack,
-        int         cardList[])
+        int         obtCardList[],
+        int         remCardList[])
 {
     int num = 0;
-
+    int rem = 0;
     for ( int i = 1; i <= PackListId::NUM_CARDS; ++ i ) {
         const  int  pat = g_cardTable[i];
         if ( pat & bitPack ) {
-            cardList[num++] = i;
+            obtCardList[num ++] = i;
+        } else {
+            remCardList[rem ++] = i;
         }
     }
 
@@ -77,11 +80,13 @@ int  computeObtainCardList(
 int main(int argc, char * argv[])
 {
     int obtainCards[928];
+    int remainCards[928];
 
     initializeCardTable();
 
     int     bitPack = 0x00000001;
-    const  int  num = computeObtainCardList(bitPack, obtainCards);
+    const  int  num = computeObtainCardList(
+                            bitPack, obtainCards, remainCards);
     std::cout   <<  "Packs = "      <<  bitPack
                 <<  ", Cards = "    <<  num
                 <<  std::endl;
