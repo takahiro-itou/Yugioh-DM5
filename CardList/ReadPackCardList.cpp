@@ -4,9 +4,7 @@
 #include    <iostream>
 
 
-constexpr   int     NUM_CARDS   = 928;
-
-int  g_cardTable[NUM_CARDS + 1] = { 0 };
+int  g_cardTable[PackListId::NUM_CARDS + 1] = { 0 };
 
 void  initializeCardTable()
 {
