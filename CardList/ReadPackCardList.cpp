@@ -63,7 +63,7 @@ void  initializeCardTable()
         int prv = 0;
         for ( int j = 0; j < nc; ++ j ) {
             if (  packTable[p].cardList[j].rarity == CardRarity::NORMAL ) {
-                continue;
+                //  continue;
             }
             const  int  ci  = packTable[p].cardList[j].number;
             if ( ci < prv ) {
@@ -99,6 +99,15 @@ void  initializeCardTable()
                 <<  ", Actual = "   <<  g_cardTable[928]
                 <<  ", Expect = "   <<  exp
                 <<  std::endl;
+
+    exp = (PackBits::VOL2 | PackBits::PHANTOM_GOD
+           | PackBits::DUELIST_PACK | PackBits::RARE_SELECTION
+           | PackBits::VJUMP_GIFT_PACK);
+    std::cerr   <<  "ID = 119"
+                <<  ", Actual = "   <<  g_cardTable[119]
+                <<  ", Expect = "   <<  exp
+                <<  std::endl;
+
 }
 
 int  computeObtainCardList(
@@ -147,7 +156,7 @@ int main(int argc, char * argv[])
     initializeCardTable();
 
     int     bitPack = pbEssential | pbStage10Win;
-    showObtrainRemainCards(bitPack);
+    showObtrainRemainCards(0xFFFFFFFF & ~PackBits::LIMITED_PACK);
 
     return ( 0 );
 }
