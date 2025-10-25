@@ -159,7 +159,7 @@ int main(int argc, char * argv[])
     int     bitPack = pbEssential | pbStage10Win;
     showObtrainRemainCards(0x7FFFFFFF & ~PackBits::LIMITED_PACK);
 
-    const  int  bitEss  = pbEssential | pbEssential | PackBits::LIMITED_PACK;
+    const  int  bitEss  = pbEssential | pbStage10Win | PackBits::LIMITED_PACK;
     for ( int p = 0; p < PackListId::NUM_PACKS; ++ p ) {
         const  int  pat = (1 << p);
         if ( (bitEss) & pat ) {
@@ -171,7 +171,11 @@ int main(int argc, char * argv[])
         std::cout   <<  "Exclude Pack "  <<  p
                     <<  ", pat = "  <<  pat
                     <<  std::endl;
-        bitPack = 0x07BFFFFF & ~pat;
+        bitPack = 0x07FBFFFFF & ~pat;
+        showObtrainRemainCards(bitPack);
+        std::cout   <<  std::endl;
+
+        bitPack = 0x07FFFFFFF & ~pat;
         showObtrainRemainCards(bitPack);
         std::cout   <<  std::endl;
     }
