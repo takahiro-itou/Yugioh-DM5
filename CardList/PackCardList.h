@@ -269,4 +269,75 @@ packTable[27] = {
 
 #undef      PACK_ENTRY
 
+namespace  PackListId  {
+
+enum  {
+    VOL1    = 0,
+    VOL2,
+    VOL3,
+    VOL4,
+    VOL5,
+    VOL6,
+    VOL7,
+    MAGIC_RULER,
+    PHARAOHS_SERVANT,
+    CURSE_OF_ANUBIS,
+    LEGEND_OF_BLUE_EYES_WHITE_DRAGON,
+    PHANTOM_GOD,
+    DARK_CEREMONY,
+    PREMIUMPACK3,
+    EXPERTPACK1,
+    EXPERTPACK2,
+    EXPERTPACK3,
+    EXPERTPACK4,
+    EXPERTPACK5,
+    DUELIST_PACK,
+    DUEL_FINALIST,
+    RARE_SELECTION,
+    LIMITED_PACK,
+    GRANDPA_PACK,
+    WEEKLY_JUMP_GIFT_PACK_A,
+    WEEKLY_JUMP_GIFT_PACK_B,
+    VJUMP_GIFT_PACK,
+
+    NUM_PACKS,
+    NUM_CARDS   = 928,
+};
+
+}   //  End of namespace  PackListId
+
+namespace  PackBits  {
+
+enum  {
+    VOL1                    = 0x00000001,
+    VOL2                    = 0x00000002,
+    VOL3                    = 0x00000004,
+    VOL4                    = 0x00000008,
+    VOL5                    = 0x00000010,
+    VOL6                    = 0x00000020,
+    VOL7                    = 0x00000040,
+    MAGIC_RULER             = 0x00000080,
+    PHARAOHS_SERVANT        = 0x00000100,
+    CURSE_OF_ANUBIS         = 0x00000200,
+    LEGEND_OF_BLUE_EYES_WHITE_DRAGON    = 0x00000400,
+    PHANTOM_GOD             = 0x00000800,
+    DARK_CEREMONY           = 0x00001000,
+    PREMIUMPACK3            = 0x00002000,
+    EXPERTPACK1             = 0x00004000,
+    EXPERTPACK2             = 0x00008000,
+    EXPERTPACK3             = 0x00010000,
+    EXPERTPACK4             = 0x00020000,
+    EXPERTPACK5             = 0x00040000,
+    DUELIST_PACK            = 0x00080000,
+    DUEL_FINALIST           = 0x00100000,
+    RARE_SELECTION          = 0x00200000,
+    LIMITED_PACK            = 0x00400000,
+    GRANDPA_PACK            = 0x00800000,
+    WEEKLY_JUMP_GIFT_PACK_A = 0x01000000,
+    WEEKLY_JUMP_GIFT_PACK_B = 0x02000000,
+    VJUMP_GIFT_PACK         = 0x04000000,
+};
+
+}   //  End of namespace  PackBits
+
 #endif
