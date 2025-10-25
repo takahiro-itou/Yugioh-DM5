@@ -13,6 +13,8 @@ void  initializeCardTable()
     for ( int i = 0; i <= NUM_CARDS; ++ i ) {
         g_cardTable[i]  = 0;
     }
+
+    int prv = 0;
     for ( int p = 0; p < getArraySize(packTable); ++ p ) {
         const  int  val = (1 << p);
         const  int  nc  = packTable[p].numCards;
@@ -21,6 +23,15 @@ void  initializeCardTable()
                 continue;
             }
             const  int  ci  = packTable[p].cardList[j].number;
+            if ( ci < prv ) {
+                std::cerr   <<  "Not sorted (or typo) card number."
+                            <<  " in p = "  <<  p
+                            <<  ", idx = "  <<  j
+                            <<  ", prv = "  <<  prv
+                            <<  ", ci  = "  <<  ci
+                            <<  std::endl;
+            }
+            prv = ci;
             g_cardTable[ci] |= val;
         }
     }
