@@ -87,7 +87,12 @@ showObtrainRemainCards(
     const  int  rem = (PackListId::NUM_CARDS - num);
     std::cout   <<  "Packs = "      <<  bitPack
                 <<  ", Cards = "    <<  num
+                <<  ", Rems  = "    <<  rem
                 <<  std::endl;
+
+    for ( int i = 0; i < rem; ++ i ) {
+        std::cout   <<  remainCards[i]  <<  std::endl;
+    }
 
     return;
 }
