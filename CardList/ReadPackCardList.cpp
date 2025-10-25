@@ -8,14 +8,20 @@ int  g_cardTable[PackListId::NUM_CARDS + 1] = { 0 };
 
 /**
 **    ゲーム進行で絶対手に入るパック。
+**
 **  - 最初から選択可能
-**      -   VOL1
-**      -   VOL2
-**      -   VOL3
+**      - VOL1
+**      - VOL2
+**      - VOL3
 **  - ステージ進行時
-**      -   ExpertPack2   : ステージ１で全員に２勝。ステージ２開始
-**      -   ExpertPack4   : ステージ２で全員に３勝。ステージ３開始
-**      -   PremiumPack3  : ステージ３で全員に４勝。ステージ４開始
+**      - ExpertPack2   : ステージ１で全員に２勝。ステージ２開始
+**      - ExpertPack4   : ステージ２で全員に３勝。ステージ３開始
+**      - PremiumPack3  : ステージ３で全員に４勝。ステージ４開始
+**  - その他
+**      - GrandpaPack
+**      - WeeklyJumpGiftPackA
+**      - WeeklyJumpGiftPackB
+**      - VJumpGiftPack
 **/
 
 constexpr  int  pbEssential = (
@@ -23,9 +29,27 @@ constexpr  int  pbEssential = (
         | PackBits::EXPERTPACK2
         | PackBits::EXPERTPACK4
         | PackBits::PREMIUMPACK3
+        | PackBits::GRANDPA_PACK
         | PackBits::WEEKLY_JUMP_GIFT_PACK_A
         | PackBits::WEEKLY_JUMP_GIFT_PACK_B
         | PackBits::VJUMP_GIFT_PACK);
+
+/**
+**    他の条件の前にほぼ成立するパック。
+**
+**  -ステージ内で１０勝。
+**      - ExpertPack1   : ステージ１内で１０勝
+**      - VOL5          : ステージ２内で１０勝
+**      - MagicRuler    : ステージ３内で１０勝
+**      - Duelist_Pack  : ステージ４内で１０勝
+**/
+
+constexpr  int  pbStage10Win = (
+        PackBits::EXPERTPACK1
+        | PackBits::VOL5
+        | PackBits::MAGIC_RULER
+        | PackBits::DUELIST_PACK
+);
 
 void  initializeCardTable()
 {
@@ -122,8 +146,8 @@ int main(int argc, char * argv[])
 {
     initializeCardTable();
 
-    int     bitPack = 0x07FFFFFF;
-    showObtrainRemainCards(pbEssential);
+    int     bitPack = pbEssential | pbStage10Win;
+    showObtrainRemainCards(bitPack);
 
     return ( 0 );
 }
