@@ -51,9 +51,10 @@ void  initializeCardTable()
                 <<  ", Expect = "   <<  exp
                 <<  std::endl;
 
+    exp = (PackBits::DUEL_FINALIST | PackBits::GRANDPA_PACK);
     std::cerr   <<  "ID = 928"
                 <<  ", Actual = "   <<  g_cardTable[928]
-                <<  ", Expect = "   <<  0x00900000
+                <<  ", Expect = "   <<  exp
                 <<  std::endl;
 }
 
