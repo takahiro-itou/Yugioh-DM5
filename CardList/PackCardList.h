@@ -269,7 +269,7 @@ packTable[27] = {
 
 #undef      PACK_ENTRY
 
-struct  PackListId  {
+namespace  PackListId  {
 
 enum  {
     VOL1    = 0,
