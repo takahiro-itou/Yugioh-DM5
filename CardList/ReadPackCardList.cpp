@@ -6,6 +6,27 @@
 
 int  g_cardTable[PackListId::NUM_CARDS + 1] = { 0 };
 
+/**
+**    ゲーム進行で絶対手に入るパック。
+**  - 最初から選択可能
+**      -   VOL1
+**      -   VOL2
+**      -   VOL3
+**  - ステージ進行時
+**      -   ExpertPack2   : ステージ１で全員に２勝。ステージ２開始
+**      -   ExpertPack4   : ステージ２で全員に３勝。ステージ３開始
+**      -   PremiumPack3  : ステージ３で全員に４勝。ステージ４開始
+**/
+
+constexpr  int  pbEssential = (
+        PackBits::VOL1 | PackBits::VOL2 | PackBits::VOL3
+        | PackBits::EXPERTPACK2
+        | PackBits::EXPERTPACK4
+        | PackBits::PREMIUMPACK3
+        | PackBits::WEEKLY_JUMP_GIFT_PACK_A
+        | PackBits::WEEKLY_JUMP_GIFT_PACK_B
+        | PackBits::VJUMP_GIFT_PACK);
+
 void  initializeCardTable()
 {
     for ( int i = 0; i <= PackListId::NUM_CARDS; ++ i ) {
@@ -91,7 +112,7 @@ showObtrainRemainCards(
                 <<  std::endl;
 
     for ( int i = 0; i < rem; ++ i ) {
-        std::cout   <<  remainCards[i]  <<  std::endl;
+        std::cout   <<  remainCards[i]  <<  ", ";
     }
 
     return;
@@ -102,7 +123,7 @@ int main(int argc, char * argv[])
     initializeCardTable();
 
     int     bitPack = 0x07FFFFFF;
-    showObtrainRemainCards(bitPack);
+    showObtrainRemainCards(pbEssential);
 
     return ( 0 );
 }
